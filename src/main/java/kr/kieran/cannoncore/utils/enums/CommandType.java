@@ -2,7 +2,7 @@ package kr.kieran.cannoncore.utils.enums;
 
 public enum CommandType {
 
-    CORE("kr/kieran/cannoncore", "permission", "no-permission", ConfigType.MAIN_CONFIG),
+    CORE("cannoncore", "permission", "no-permission", ConfigType.MAIN_CONFIG),
     TNTSOUND("tntsound", "permission", "no-permission", ConfigType.TNTSOUND_CONFIG),
     XRAY("xray", "permission", "no-permission", ConfigType.XRAY_CONFIG),
     BUTTON("button", "button-permission", "no-permission", ConfigType.REMOTEBUTTON_CONFIG),
