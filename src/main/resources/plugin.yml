@@ -5,17 +5,19 @@ description: ${project.description}
 author: Kieraaaan
 website: ${project.url}
 
-main: ${project.groupId}.Core
+main: ${project.groupId}.${project.artifactId}
 database: false
 depend: [ProtocolLib]
 
 commands:
-  core:
+  cannoncore:
     usage: /<command>
     description: Reload config and change values in-game.
+    aliases: [ccore, cannonc, core]
   tntsound:
     usage: /<command>
     description: Enable/disable tnt sounds.
+    aliases: [tntsounds]
   xray:
     usage: /<command>
     description: Enable/disable xray.

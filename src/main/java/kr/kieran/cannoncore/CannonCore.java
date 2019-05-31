@@ -43,9 +43,9 @@ public class CannonCore extends JavaPlugin {
     public void onEnable() {
         instance = this;
         loadConfigurations();
-        loadListeners();
         loadModules();
         loadCommands();
+        loadListeners();
     }
 
     @Override
