@@ -12,6 +12,7 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class XRayModule {
 
@@ -21,7 +22,7 @@ public class XRayModule {
 
     public XRayModule(CannonCore plugin) {
         this.plugin = plugin;
-        this.toggledPlayers = new HashMap<>();
+        this.toggledPlayers = new ConcurrentHashMap<>();
         this.fullyToggled = new HashSet<>();
         loadPacketHandlers();
         plugin.getLogger().info("XRay module successfully loaded.");

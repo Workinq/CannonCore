@@ -41,6 +41,7 @@ public class XRayCommand extends CoreCommand {
         player.sendMessage(Chat.color(config.getConfig().getString("xray-enabled")));
     }
 
+    @SuppressWarnings("deprecation")
     private void enableXray(Player player) {
         List<String> disabledBlocks = config.getConfig().getStringList("disabled-blocks");
         Location start = player.getLocation();
