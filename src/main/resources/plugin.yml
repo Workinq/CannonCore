@@ -1,0 +1,61 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+
+author: Kieraaaan
+website: ${project.url}
+
+main: ${project.groupId}.Core
+database: false
+depend: [ProtocolLib]
+
+commands:
+  core:
+    usage: /<command>
+    description: Reload config and change values in-game.
+  tntsound:
+    usage: /<command>
+    description: Enable/disable tnt sounds.
+  xray:
+    usage: /<command>
+    description: Enable/disable xray.
+  button:
+    usage: /<command>
+    description: Set, reset or fire a button remotely.
+  fire:
+    usage: /<command>
+    description: Trigger a button remotely.
+  tickcounter:
+    usage: /<command>
+    description: Give yourself an item to count ticks on repeaters.
+    aliases: [tcounter, tickc, ticks, tick]
+
+permissions:
+  core.*:
+    description: Gives access to all core commands.
+    default: op
+    children:
+      core.core: true
+      core.tntsound: true
+      core.xray: true
+      core.button: true
+      core.fire: true
+      core.tickcounter: true
+  core.core:
+    description: Allows you to use the core command.
+    default: false
+  core.tntsound:
+    description: Allows you to use the tntsound command.
+    default: false
+  core.xray:
+    description: Allows you to use the xray command.
+    default: false
+  core.button:
+    description: Allows you to use the button command.
+    default: false
+  core.fire:
+    description: Allows you to use the fire command.
+    default: false
+  core.tickcounter:
+    description: Allows you to use the tickcounter command.
+    default: false

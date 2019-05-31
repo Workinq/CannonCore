@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    working-directory: ~/cannon-core
+    docker:
+      - image: circleci/openjdk:8u181-jdk
+    steps:
+      - checkout
+      - run: sudo wget 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar' -O BuildTools.jar
+      - run: java -Xmx4096M -jar BuildTools.jar --rev 1.8.8
+      - run: mvn clean install
+      - store_artifacts:
+          path: target/*.jar
+workflows:
+  version: 2
+  workflow:
+    jobs:
+    - build
