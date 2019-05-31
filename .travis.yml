@@ -3,7 +3,7 @@ jdk:
     - oraclejdk8
 sudo: true
 before_install:
-  - sudo wget 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar' -O BuildTools.jar
+  - wget 'https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar' -O BuildTools.jar
   - java -Xmx4096M -jar BuildTools.jar --rev 1.8.8
 cache:
     directories:
