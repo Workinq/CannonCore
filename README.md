@@ -1,7 +1,7 @@
 # Cannon Core
 
-[![TravisCI](https://travis-ci.com/Workinq/Cannon-Core.svg?token=eMQsHfKKKeVHmomJz3JR&branch=master)](https://travis-ci.com/Workinq/Cannon-Core)
-[![CircleCI](https://circleci.com/gh/Workinq/Cannon-Core.svg?style=shield&circle-token=22f800d8409615c9012c9a3cf5d590fbf29b7015)](https://circleci.com/gh/Workinq/Cannon-Core)
+[![TravisCI](https://travis-ci.com/Workinq/CannonCore.svg?token=eMQsHfKKKeVHmomJz3JR&branch=master)](https://travis-ci.com/Workinq/CannonCore)
+[![CircleCI](https://circleci.com/gh/Workinq/CannonCore.svg?style=shield&circle-token=5f217a5534489be8fe32484211ca126037f3c6d0)](https://circleci.com/gh/Workinq/CannonCore)
 
 Cannon core is a plugin which adds lots of useful features which improve a cannoner's experience with handy tools, etc.
 
